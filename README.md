@@ -14,11 +14,17 @@ This project contains two components:
 
 If the .NET 10 isn't installed please install it.
 
+**Trust the Development Certificate:**
+```bash
+dotnet dev-certs https --trust
+```
+
+
 **Run the API:**
 ```bash
-dotnet run --project SunCommunitiesApi
+dotnet run --project SunCommunitiesApi --launch-profile https
 ```
-The API will be available at `https://localhost:[port]`
+The API will be available at `https://localhost:7120`
 
 **Run the tests:**
 ```bash
