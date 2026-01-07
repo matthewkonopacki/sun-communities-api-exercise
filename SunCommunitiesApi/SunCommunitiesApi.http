@@ -1,6 +1,12 @@
 @SunCommunitiesApi_HostAddress = http://localhost:5044
 
-GET {{SunCommunitiesApi_HostAddress}}/weatherforecast/
+GET {{SunCommunitiesApi_HostAddress}}/health/
 Accept: application/json
 
 ###
+
+@Amount = 100
+@Preferred = true
+
+GET {{SunCommunitiesApi_HostAddress}}/api/fees/estimate?amount={{Amount}}&preferred={{Preferred}}
+Accept: application/json

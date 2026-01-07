@@ -3,7 +3,7 @@ namespace SunCommunitiesApi.Models;
 public class FeeResponse
 {
   public decimal InputAmount { get; set; }
-  public bool Preferred { get; set; }
+  public bool IsPreferred { get; set; }
   public decimal BaseRate { get; set; }
   public decimal EffectiveRate { get; set; }
   public decimal CalculatedFee { get; set; }
@@ -11,14 +11,14 @@ public class FeeResponse
 
   public FeeResponse(
     decimal inputAmount, 
-    bool preferred, 
+    bool isPreferred, 
     decimal baseRate, 
     decimal effectiveRate, 
     decimal calculatedFee, 
     bool isCapped)
     {
         InputAmount = inputAmount;
-        Preferred = preferred;
+        IsPreferred = isPreferred;
         BaseRate = baseRate;
         EffectiveRate = effectiveRate;
         CalculatedFee = calculatedFee;
