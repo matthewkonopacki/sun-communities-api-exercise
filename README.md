@@ -10,6 +10,10 @@ This project contains two components:
 
 ## How to Run
 
+**Install the .NET 10 sdk:**
+
+If the .NET 10 isn't installed please install it.
+
 **Run the API:**
 ```bash
 dotnet run --project SunCommunitiesApi
